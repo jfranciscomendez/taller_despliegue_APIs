@@ -23,7 +23,7 @@ def hello(): # Ligado al endopoint "/" o sea el home, con el método GET
 
 
 
-@app.route('', methods=['GET'])
+@app.route('/', methods=['GET'])
 def predict(): # Ligado al endpoint '/api/v1/predict', con el método GET
     with open('ad_model.pkl', 'rb') as f:
         model = pickle.load(f)
